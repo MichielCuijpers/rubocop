@@ -1,0 +1,22 @@
+component_depth: 1
+languages:
+- name: csharp
+  production:
+    include:
+      - /src/Exact.Hercules.Web/.*.cs
+      - /src/Exact.Hercules.Web/.*.cshtml
+  test:
+    include:
+      - /test/.*.cs
+- name: javascript
+  production:
+    include:
+      - /src/Exact.Hercules.Web/app/src/.*.js
+      - /src/Exact.Hercules.Web/organization/src/.*.js
+      - /src/Exact.Hercules.Web/organization/src/.*.jsx
+    exclude:
+      - .*spec.js
+  test:
+    include:
+      - /src/.*spec.cs
+      - /src/Exact.Hercules.Web/organization/tests/unit/.*.js
